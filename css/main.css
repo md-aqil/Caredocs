@@ -1,0 +1,87 @@
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_1409">Text with this font applied</p> */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900');
+body {
+  font-family: 'Montserrat', sans-serif !important;
+  
+}
+
+:root {
+
+  --theme-red: #fd6864;
+  --theme-secondry: #4e5779;
+}
+.s-color {
+	color: #182451 !important;
+	font-size: 19px;
+}
+.left-sidebar, .right-sidebar {
+      position: fixed;
+      top: 0;
+    
+      bottom: 0;
+      width: 18%;
+      background-color: red;
+      padding: 0px;
+}
+.left-sidebar {
+    left: 0;
+}
+.right-sidebar {
+  right: 0 !important;
+}
+#main {
+    margin-left: 18%;
+      width: 81%;
+      margin-top: 0;
+      float: left;
+      /*background: #ddd;*/
+  
+}
+
+.ui.red.button, .ui.red.buttons .button {
+	background-color: var(--theme-red);
+}
+
+.ui.basic.red.button, .ui.basic.red.buttons .button {
+	box-shadow: 0 0 0 1px var(--theme-red);
+
+}
+
+.mt25 {
+	margin-top: 25px !important;
+}
+
+.no-border {
+	border:none !important;
+}
+.content-table {
+	padding: 8px;
+}
+.content-table .ui.table td {
+    padding: 13px 10px;
+    border: none;
+  
+}
+.content-table .ui.table {
+    padding: 13px 10px;
+    border: none;
+  
+}
+
+
+.f20 {
+	font-size: 20px !important;
+}
+
+.content-table .ui.table thead th{
+	color: #8c92a9;
+	    font-weight: 500;
+	    font-size: 12px;
+	    border: none;
+}
+
+.content-table .ui.table tr td{
+	color: #525b7c;
+	    font-weight: 500;
+	    font-size: 12px;
+}
