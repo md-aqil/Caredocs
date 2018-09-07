@@ -20,8 +20,14 @@ body {
     
       bottom: 0;
       width: 18%;
-      background-color: red;
+      /*background-color: #ddd;*/
       padding: 0px;
+}
+.sidebar-content {
+	padding: 20px 30px;
+	margin-top: 70px;
+	position: relative;
+	    height: 100%;
 }
 .left-sidebar {
     left: 0;
@@ -84,4 +90,81 @@ body {
 	color: #525b7c;
 	    font-weight: 500;
 	    font-size: 12px;
+}
+.list-inline {
+	list-style: none;
+	padding: 0;
+}
+.list-inline li {
+	float: left;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.fz18 {
+	font-size: 18px !important;
+}
+.fz16{
+	font-size: 16px !important;
+}
+.ui.list.activity-list  a.header {
+	color: #182451 !important ;
+	font-weight: 400;
+
+}
+ .ui.list.activity-list .description{
+	font-size: 12px;
+	    margin: 8px auto;
+	    font-weight: 500;
+	    color: #8d93a9;
+}
+.ab {
+	text-align: right !important;
+
+}
+.ab .button {
+	background: transparent;
+}
+
+.ui.list.sidelsit .item {
+	color: #525b7c;
+	font-size: 13px;
+	font-weight: 500;
+	padding: 10px 0;
+}
+.ui.list.sidelsit .item.active .content{
+	font-weight: bold;
+}
+.ui.list.sidelsit .item.active .icon {
+	color: var(--theme-red);
+}
+.ui.list.activity-list p {
+	margin-bottom: 4px;
+	font-size: 12px;
+}
+.ui.list.activity-list .item {
+	padding: 12px 0;
+}
+.text-muted {
+	color: #666d88 !important;
+}
+.labeled {
+	margin: 10px auto;
+	display: block;
+}
+
+.sm-label {
+	font-weight: 600;
+	    font-size: 11px;
+	    color: #525b7c;
+}
+.ui.red.progress .bar {
+	background-color: var(--theme-red);
+}
+
+.disk-space {
+	position: absolute;
+	    width: 100%;
+	    bottom: 100px;
+	 
+	    padding-right: 50px;
 }

@@ -8,86 +8,438 @@
 <body>
 
 
-	<aside class="left-sidebar"></aside>
+	<aside class="left-sidebar">
+		<div class="sidebar-content">
+			<div class="ui list sidelsit">
+		  <div class="item active">
+		    <i class="folder icon"></i>
+		    <div class="content">
+		     	All Documents
+		    </div>
+		  </div>
+		  <div class="item">
+		    <i class="users icon"></i>
+		    <div class="content">
+		      Shared with me
+		    </div>
+		  </div>
+		  <div class="item">
+		    <i class="arrow alternate circle down icon"></i>
+		    <div class="content">
+		     	Requests
+		    </div>
+		  </div>
+		  <div class="item">
+		    <i class="trash alternate icon"></i>
+		    <div class="content">
+		     	Trash
+		    </div>
+		  </div>
+		   <div class="item">
+		    <i class="cog icon"></i>
+		    <div class="content">
+		     	Settings
+		    </div>
+		  </div>
+		 
+		</div>
+
+		<div class="disk-space">
+		  <div class="label sm-label">Space Used</div>
+		<div class="ui tiny progress red" data-percent="20" id="example1" style="width: 50%">
+		
+		  <div class="bar"></div>
+		  <div class="label text-muted" style="text-align: left;font-weight: 400; ">2GB of 10GB</div>
+		</div>
+		
+			<button class="ui red basic button fluid"> Upgrade </button>
+								     
+		</div>
+
+		</div>
+		
+
+	</aside>
 
 	<main id="main">
 		<div class="ui menu no-border">
-		<div class="item">
-		  <div  class="ui transparent icon input">
-		    <i class="search link icon left"></i>
-		    <input type="text" placeholder="Search Document">
-		  </div>
-		</div>
-	
-		  <div class="right menu">
-		  
-		   <a class="item">
-		     <i class="bell outline icon"></i>
+			<div class="item">
+			  <div  class="ui transparent left icon input">
+			    <i class="search link icon left"></i>
+			    <input type="text" placeholder="Search Document">
+			  </div>
+			</div>
+		
+			  <div class="right menu">
+			  
+			   <a class="item">
+			     <i class="bell outline icon"></i>
 
-		   </a>
-		   <a class="item">
-		     <img style="width: 28px;
-    border-radius: 3px;" class="ui mini image" src="img/avtar.jpg">
+			   </a>
+			   <a class="item">
+			     <img style="width: 28px;
+	    			border-radius: 3px;" class="ui mini image" src="img/avtar.jpg">
 
+				    <i class="chevron right icon" style="margin-left: 10px;
+				    opacity: .7;
+				    font-size: 13px;"></i>
 
-    <i class="chevron right icon" style="margin-left: 10px;
-    opacity: .7;
-    font-size: 13px;"></i>
-
-		   </a>
-		  </div>
-		</div>
-
+			   </a>
+			  </div>
+			</div>
 
 				<div class="ui menu mt25 no-border">
-				<div class="item">
-				  <h4 class="s-color">All Documents</h4>
+					<div class="item">
+					  <h4 class="s-color">All Documents</h4>
+					</div>
+				
+					  <div class="right menu">
+					  
+					   <a class="item">
+					     <button class="ui red basic button">
+					      <i class="folder icon"></i>New Folder </button>
+
+					   </a>
+					   <a class="item">
+					    <button class="ui red button"> <i class="arrow circle up icon"></i> 
+					    Upload Doc</button>
+
+					   </a>
+					  </div>
 				</div>
-			
-				  <div class="right menu">
-				  
-				   <a class="item">
-				     <button class="ui red basic button">
-				      <i class="folder icon"></i>New Folder </button>
 
-				   </a>
-				   <a class="item">
-				    <button class="ui red button"> <i class="arrow circle up icon"></i> 
-				    Upload Doc</button>
+		<section class="ui grid">
+			<div class="twelve wide column">
+				
+						<div class="content-table">
+							<table class="ui celled table">
+							  <thead>
+							    <tr>
+							      <th>
+							      	<div class="ui dropdown">
+							      	  <div class="text">Name</div>
+							      	  <i class="dropdown icon"></i>
+							      	  <div class="menu">
+							      	    <div class="item">New</div>
+							      	    <div class="item">
+							      	      <span class="description">ctrl + o</span>
+							      	      Open...
+							      	    </div>
+							      	   
+							      	   
+							      	  </div>
+							      	</div>
+							      </th>
+							      <th>Modified</th>
+							      <th>Members</th>
+							      <th>
+							    
+							      	<ul class="list-inline" style="float: right;">
+							      		<li><i class="icon th"></i></li>
+							      		<li><i class="icon  list"></i></li>
+							      	</ul>
+							      </th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+							      <td><i class="file alternate icon f20" style="color:#8387fa;"></i> 
+							      	Blood-Test.pdf
+							      </td>
+							      <td>Today</td>
+							      <td>You</td>
 
-				   </a>
+							      <td  class="ab">
+							      	
+
+							      <div class="ui icon top pointing dropdown button">
+							      	 <i class="icon ellipsis vertical"></i>
+							      	 
+							      	  <div class="menu">
+							      	   
+							      	    <div class="header">
+							      	      <i class="tags icon"></i>
+							      	      Tag Label
+							      	    </div>
+							      	    <div class="scrolling menu">
+							      	      <div class="item" data-value="important">
+							      	        <div class="ui red empty circular label"></div>
+							      	        Important
+							      	      </div>
+							      	      <div class="item" data-value="announcement">
+							      	        <div class="ui blue empty circular label"></div>
+							      	        Announcement
+							      	      </div>
+							      	      
+							      	    </div>
+							      	  </div>
+							      	</div>
+							      </td>
+							    </tr>
+							    <tr>
+							      <td><i class="music icon f20" style="color:#29d38a;"></i> 
+							      	Medidation.mp3
+							      </td>
+							      <td>Yesterday</td>
+							      <td>2 members</td>
+
+							      <td class="ab">
+							      	<div class="ui icon top pointing dropdown button">
+							      		 <i class="icon ellipsis vertical"></i>
+							      		 
+							      		  <div class="menu">
+							      		   
+							      		    <div class="header">
+							      		      <i class="tags icon"></i>
+							      		      Tag Label
+							      		    </div>
+							      		    <div class="scrolling menu">
+							      		      <div class="item" data-value="important">
+							      		        <div class="ui red empty circular label"></div>
+							      		        Important
+							      		      </div>
+							      		      <div class="item" data-value="announcement">
+							      		        <div class="ui blue empty circular label"></div>
+							      		        Announcement
+							      		      </div>
+							      		      
+							      		    </div>
+							      		  </div>
+							      		</div>
+							      </td>
+							    </tr>
+							   <tr>
+							     <td><i class="play circle icon f20" style="color:#4991ff;"></i> 
+							     	Yoga class.mp4
+							     </td>
+							     <td>Jan 25, 2018</td>
+							     <td>Alex</td>
+
+							     <td class="ab">
+							     	<div class="ui icon top pointing dropdown button">
+							     		 <i class="icon ellipsis vertical"></i>
+							     		 
+							     		  <div class="menu">
+							     		   
+							     		    <div class="header">
+							     		      <i class="tags icon"></i>
+							     		      Tag Label
+							     		    </div>
+							     		    <div class="scrolling menu">
+							     		      <div class="item" data-value="important">
+							     		        <div class="ui red empty circular label"></div>
+							     		        Important
+							     		      </div>
+							     		      <div class="item" data-value="announcement">
+							     		        <div class="ui blue empty circular label"></div>
+							     		        Announcement
+							     		      </div>
+							     		      
+							     		    </div>
+							     		  </div>
+							     		</div>
+							     </td>
+							   </tr>
+
+							   <tr>
+							     <td><i class="image icon f20" style="color:#ffb95f;"></i> 
+							     	Assessment.jpg
+							     </td>
+							     <td>Jan 25, 2018</td>
+							     <td>3 members</td>
+
+							     <td class="ab">
+							     	<div class="ui icon top pointing dropdown button">
+							     		 <i class="icon ellipsis vertical"></i>
+							     		 
+							     		  <div class="menu">
+							     		   
+							     		    <div class="header">
+							     		      <i class="tags icon"></i>
+							     		      Tag Label
+							     		    </div>
+							     		    <div class="scrolling menu">
+							     		      <div class="item" data-value="important">
+							     		        <div class="ui red empty circular label"></div>
+							     		        Important
+							     		      </div>
+							     		      <div class="item" data-value="announcement">
+							     		        <div class="ui blue empty circular label"></div>
+							     		        Announcement
+							     		      </div>
+							     		      
+							     		    </div>
+							     		  </div>
+							     		</div>
+							     </td>
+							   </tr>
+							   <tr>
+							     <td><i class="folder icon f20" style="color:#ff6f6c;"></i> 
+							     	Surgery labs
+							     </td>
+							     <td>Jan 2, 2018</td>
+							     <td>You</td>
+
+							     <td class="ab">
+							     	<div class="ui icon top pointing dropdown button">
+							     		 <i class="icon ellipsis vertical"></i>
+							     		 
+							     		  <div class="menu">
+							     		   
+							     		    <div class="header">
+							     		      <i class="tags icon"></i>
+							     		      Tag Label
+							     		    </div>
+							     		    <div class="scrolling menu">
+							     		      <div class="item" data-value="important">
+							     		        <div class="ui red empty circular label"></div>
+							     		        Important
+							     		      </div>
+							     		      <div class="item" data-value="announcement">
+							     		        <div class="ui blue empty circular label"></div>
+							     		        Announcement
+							     		      </div>
+							     		      
+							     		    </div>
+							     		  </div>
+							     		</div>
+							     </td>
+							   </tr>
+							   <tr>
+							     <td>
+							     <i class="file alternate icon f20" style="color:#8387fa;"></i>
+							     	Surgery.pdf
+							     </td>
+							     <td>Jan 2, 2018</td>
+							     <td>You</td>
+
+							     <td class="ab">
+							     	<div class="ui icon top pointing dropdown button">
+							     		 <i class="icon ellipsis vertical"></i>
+							     		 
+							     		  <div class="menu">
+							     		   
+							     		    <div class="header">
+							     		      <i class="tags icon"></i>
+							     		      Tag Label
+							     		    </div>
+							     		    <div class="scrolling menu">
+							     		      <div class="item" data-value="important">
+							     		        <div class="ui red empty circular label"></div>
+							     		        Important
+							     		      </div>
+							     		      <div class="item" data-value="announcement">
+							     		        <div class="ui blue empty circular label"></div>
+							     		        Announcement
+							     		      </div>
+							     		      
+							     		    </div>
+							     		  </div>
+							     		</div>
+							     </td>
+							   </tr>
+							   <tr>
+							     <td><i class="folder icon f20" style="color:#ff6f6c;"></i> 
+							     	Agreements
+							     </td>
+							     <td>Dec 25, 2017</td>
+							     <td>You</td>
+
+							     <td class="ab">
+							     	<div class="ui icon top pointing dropdown button">
+							     		 <i class="icon ellipsis vertical"></i>
+							     		 
+							     		  <div class="menu">
+							     		   
+							     		    <div class="header">
+							     		      <i class="tags icon"></i>
+							     		      Tag Label
+							     		    </div>
+							     		    <div class="scrolling menu">
+							     		      <div class="item" data-value="important">
+							     		        <div class="ui red empty circular label"></div>
+							     		        Important
+							     		      </div>
+							     		      <div class="item" data-value="announcement">
+							     		        <div class="ui blue empty circular label"></div>
+							     		        Announcement
+							     		      </div>
+							     		      
+							     		    </div>
+							     		  </div>
+							     		</div>
+							     </td>
+							   </tr>
+							  </tbody>
+							</table>
+						</div>
+
+			</div>
+			<div class="four wide column">
+			<h4 class="s-color" style="font-size: 16px;
+    margin-top: 45px;">Activity</h4>
+    		<small class="text-muted">Today</small>
+				<div class="ui list activity-list">
+
+				  <div class="item">
+				    <img class="ui avatar image" src="img/avtar.jpg">
+				    <div class="content">
+				      <a class="header"><b>You</b> Crated a new folder</a>
+				      <div class="description">just now</div>
+				      <p>
+				      	
+				      	<i class="file alternate icon fz16" style="color:#8387fa;"></i>
+				     documents
+				      </p>
+				     
+ 						<p>
+				      	
+				      	<i class="folder icon fz16" style="color:#ff6f6c;"></i> 
+				      			Surgery Docs
+				      
+				      </p>
+				     
+
+				      
+				      							     
+				    </div>
 				  </div>
+				
+  				<div class="item">
+				    <img class="ui avatar image" src="img/avtar.jpg">
+				    <div class="content">
+				      <a class="header"><b>You</b> Crated a new folder</a>
+				      <div class="description">just now</div>
+				      <small>
+				      	<i class="folder icon fz16" style="color:#ff6f6c;"></i> 
+				      								     	Surgery Docs
+				      </small>
+				      
+				      							     
+				    </div>
+				  </div>
+				
+<small class="text-muted labeled">Last Week</small>
+
+  				<div class="item">
+				    <img class="ui avatar image" src="img/avtar.jpg">
+				    <div class="content">
+				      <a class="header"><b>Alex</b> Crated a new folder</a>
+				      <div class="description">just now</div>
+				      <small>
+				      	<td><i class="image icon fz16" style="color:#ffb95f;"></i> 
+				      								     	Assessment.jpg
+				      								     </td>
+				      </small>
+				      
+				      							     
+				    </div>
+				  </div>
+				
 				</div>
-
-		<div class="content-table">
-			<table class="ui celled table">
-			  <thead>
-			    <tr>
-			      <th>Name</th>
-			      <th>Status</th>
-			      <th>Notes</th>
-			    </tr>
-			  </thead>
-			  <tbody>
-			    <tr>
-			      <td><i class="file alternate icon f20" style="color:#8387fa;"></i> No Name Specified</td>
-			      <td>Unknown</td>
-			      <td>
-			      	<i class="icon ellipsis vertical"></i>
-			      </td>
-			    </tr>
-			     <tr>
-			      <td><i class="file alternate icon f20" style="color:#8387fa;"></i> No Name Specified</td>
-			      <td>Unknown</td>
-			      <td>
-			      	<i class="icon ellipsis vertical"></i>
-			      </td>
-			    </tr>
-			   
-			  </tbody>
-			</table>
-		</div>
-
+			</div>
+		</section>
+		
 	</main>
 
 
@@ -95,5 +447,6 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/semantic.min.js"></script>
+<script src="js/controller.js"></script>
 </body>
 </html>
